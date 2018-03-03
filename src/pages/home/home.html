@@ -3,16 +3,23 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>ChatTraining</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>App para hablar con tu Entrenador Personal</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card>
+    <img src="../assets/imgs/home1.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Calistenia
+        </ion-card-title>
+      <p>
+        Entrena con tu entrenador la calistenia
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button block color="secondary" [navPush]="LoginPage">Registrate</button>
 </ion-content>
